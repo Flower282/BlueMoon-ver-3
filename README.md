@@ -1,3 +1,3 @@
-account test đăng nhập:
-admin@gmail.com
+account test đăng nhập: <br>
+admin@gmail.com <br>
 admin
