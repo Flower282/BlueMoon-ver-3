@@ -1,0 +1,72 @@
+.chart-bar {
+    -fx-bar-fill: #3366ff; /* Xanh dương */
+    -fx-background-radius: 8px; /* Bo góc cột */
+}
+
+.chart-series-line {
+    -fx-stroke: transparent; /* Ẩn đường kẻ nối */
+}
+
+.chart-plot-background {
+    -fx-background-color: transparent; /* Xóa nền */
+}
+
+.chart-vertical-grid-lines,
+.chart-horizontal-grid-lines {
+    -fx-stroke: rgba(0, 0, 0, 0.05); /* Làm lưới mờ đi */
+}
+
+.axis {
+    -fx-tick-label-fill: #666; /* Màu chữ của trục */
+    -fx-font-size: 12px;
+}
+
+.axis-label {
+    -fx-text-fill: #333; /* Màu nhãn trục */
+    -fx-font-weight: bold;
+}
+/* Tạo viền bo tròn cho ScrollPane */
+.scroll-pane {
+    -fx-background-color: transparent;  /* Nền trong suốt */
+    -fx-border-color: #ddd;  /* Viền nhẹ */
+    -fx-border-width: 1px;
+    -fx-border-radius: 8px;  /* Bo tròn góc */
+    -fx-padding: 5px;
+}
+
+/* Tùy chỉnh khu vực hiển thị nội dung */
+.scroll-pane .viewport {
+    -fx-background-color: transparent;  /* Nền trắng */
+    -fx-border-radius: 8px;
+}
+
+/* Ẩn thanh cuộn ngang */
+.scroll-pane .scroll-bar:horizontal {
+    -fx-opacity: 0;  /* Ẩn hoàn toàn */
+    -fx-pref-height: 0px;
+}
+
+/* Tùy chỉnh thanh cuộn dọc */
+.scroll-pane .scroll-bar:vertical {
+    -fx-background-color: transparent; /* Ẩn nền thanh cuộn */
+    -fx-pref-width: 8px; /* Chiều rộng nhỏ gọn */
+}
+
+/* Tùy chỉnh phần kéo của thanh cuộn */
+.scroll-pane .scroll-bar:vertical .thumb {
+    -fx-background-color: #ccc; /* Màu nhạt */
+    -fx-background-radius: 4px; /* Bo góc */
+}
+
+/* Khi di chuột vào thanh cuộn */
+.scroll-pane .scroll-bar:vertical .thumb:hover {
+    -fx-background-color: #bbb;
+}
+
+/* Ẩn nút mũi tên của thanh cuộn */
+.scroll-pane .increment-button,
+.scroll-pane .decrement-button {
+    -fx-opacity: 0;
+    -fx-pref-height: 0px;
+    -fx-pref-width: 0px;
+}

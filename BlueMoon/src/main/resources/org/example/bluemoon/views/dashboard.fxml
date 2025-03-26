@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1024.0" styleClass="root" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.bluemoon.controller.DashboardController">
+   <children>
+      <StackPane layoutX="231.0" styleClass="stack-pane" stylesheets="@../style/style.css" visible="false" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="240.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+         <children>
+            <HBox maxHeight="-Infinity" minHeight="-Infinity" prefHeight="80.0" prefWidth="779.0" StackPane.alignment="TOP_CENTER">
+               <StackPane.margin>
+                  <Insets left="20.0" right="20.0" top="20.0" />
+               </StackPane.margin>
+               <children>
+                  <AnchorPane maxHeight="-Infinity" minHeight="-Infinity" prefHeight="80.0" prefWidth="300.0" styleClass="anchor-pane-content" stylesheets="@../style/style.css" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label layoutX="79.0" layoutY="32.0" styleClass="label-title" stylesheets="@../style/style.css" text="Hello World" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="22.0">
+                           <padding>
+                              <Insets right="10.0" />
+                           </padding>
+                        </Label>
+                        <ImageView fitHeight="80.0" fitWidth="105.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/pngtree-biuilding-line-icon-vector-png-image_6627593.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </AnchorPane>
+                  <AnchorPane maxHeight="-Infinity" prefHeight="100.0" prefWidth="300.0" styleClass="anchor-pane-content" stylesheets="@../style/style.css" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label layoutX="202.0" layoutY="22.0" styleClass="label-title" stylesheets="@../style/style.css" text="Hello World" AnchorPane.bottomAnchor="22.4" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="22.0" />
+                        <ImageView fitHeight="60.0" fitWidth="96.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
+                           <image>
+                              <Image url="@../images/human.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </AnchorPane>
+               </children>
+            </HBox>
+            <HBox layoutX="30.0" layoutY="30.0" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="300.0" prefWidth="739.0" StackPane.alignment="TOP_CENTER">
+               <children>
+                  <AnchorPane prefHeight="300.0" prefWidth="300.0" styleClass="anchor-pane-content" stylesheets="@../style/style.css" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                     <children>
+                        <BarChart alternativeColumnFillVisible="true" horizontalGridLinesVisible="false" horizontalZeroLineVisible="false" layoutX="10.0" layoutY="13.0" prefHeight="272.0" prefWidth="387.0" styleClass="chart-plot-background" stylesheets="@../style/style2.css" verticalGridLinesVisible="false" verticalZeroLineVisible="false" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="35.0">
+                          <xAxis>
+                            <CategoryAxis side="BOTTOM" stylesheets="@../style/style2.css">
+                                 <styleClass>
+                                    <String fx:value="axis" />
+                                    <String fx:value="axis-label" />
+                                 </styleClass>
+                              </CategoryAxis>
+                          </xAxis>
+                          <yAxis>
+                            <NumberAxis side="LEFT" stylesheets="@../style/style2.css">
+                                 <styleClass>
+                                    <String fx:value="axis-label" />
+                                    <String fx:value="axis" />
+                                 </styleClass>
+                              </NumberAxis>
+                          </yAxis>
+                        </BarChart>
+                        <Label layoutX="12.0" layoutY="10.0" styleClass="label-title" stylesheets="@../style/style.css" text="Lịch sử thu phí" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="5.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane maxHeight="-Infinity" prefHeight="300.0" prefWidth="300.0" styleClass="anchor-pane-content" stylesheets="@../style/style.css" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label layoutX="79.0" layoutY="32.0" prefHeight="36.0" prefWidth="298.0" styleClass="label-title" stylesheets="@../style/style.css" text="Lịch sử biến động dân cư" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="5.0" />
+                        <LineChart horizontalGridLinesVisible="false" horizontalZeroLineVisible="false" layoutX="16.0" layoutY="-50.0" prefHeight="400.0" prefWidth="350.0" styleClass="chart-plot-background" stylesheets="@../style/style2.css" verticalGridLinesVisible="false" verticalZeroLineVisible="false" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="35.0">
+                          <xAxis>
+                            <CategoryAxis side="BOTTOM" stylesheets="@../style/style2.css">
+                                 <styleClass>
+                                    <String fx:value="axis" />
+                                    <String fx:value="axis-label" />
+                                 </styleClass>
+                              </CategoryAxis>
+                          </xAxis>
+                          <yAxis>
+                            <NumberAxis side="LEFT" stylesheets="@../style/style2.css">
+                                 <styleClass>
+                                    <String fx:value="axis" />
+                                    <String fx:value="axis-label" />
+                                 </styleClass>
+                              </NumberAxis>
+                          </yAxis>
+                        </LineChart>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </AnchorPane>
+               </children>
+               <StackPane.margin>
+                  <Insets left="20.0" right="20.0" top="120.0" />
+               </StackPane.margin>
+            </HBox>
+            <HBox layoutX="30.0" layoutY="130.0" prefHeight="250.0" prefWidth="739.0" StackPane.alignment="BOTTOM_CENTER">
+               <children>
+                  <AnchorPane prefHeight="300.0" prefWidth="300.0" styleClass="anchor-pane-content" stylesheets="@../style/style.css" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label layoutX="79.0" layoutY="32.0" styleClass="label-title" stylesheets="@../style/style.css" text="Khoản thu" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="5.0">
+                           <padding>
+                              <Insets right="10.0" />
+                           </padding>
+                        </Label>
+                        <Button alignment="CENTER" contentDisplay="CENTER" layoutX="293.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="35.0" prefWidth="75.0" stylesheets="@../style/style.css" text="Thêm" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0" />
+                        <ScrollPane layoutX="68.0" layoutY="37.0" prefHeight="200.0" prefWidth="200.0" stylesheets="@../style/style2.css" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="45.0">
+                          <content>
+                            <AnchorPane prefHeight="382.0" prefWidth="336.0">
+                                 <children>
+                                    <TableView prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                      <columns>
+                                        <TableColumn prefWidth="75.0" text="C1" />
+                                        <TableColumn prefWidth="75.0" text="C2" />
+                                          <TableColumn prefWidth="75.0" text="C1" />
+                                          <TableColumn prefWidth="75.0" text="C2" />
+                                      </columns>
+                                    </TableView>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="10.0" top="5.0" />
+                                 </padding>
+                              </AnchorPane>
+                          </content>
+                        </ScrollPane>
+                     </children>
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="300.0" prefWidth="300.0" styleClass="anchor-pane-content" stylesheets="@../style/style.css" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label layoutX="79.0" layoutY="32.0" styleClass="label-title" stylesheets="@../style/style.css" text="Biến động dân cư" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="5.0" />
+                        <Button alignment="CENTER" contentDisplay="CENTER" layoutX="145.0" layoutY="28.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="35.0" prefWidth="75.0" stylesheets="@../style/style.css" text="Thêm" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0" />
+                        <ScrollPane prefHeight="200.0" prefWidth="200.0" stylesheets="@../style/style2.css" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="45.0">
+                           <content>
+                              <AnchorPane prefHeight="382.0" prefWidth="336.0">
+                                 <children>
+                                    <TableView prefHeight="200.0" prefWidth="200.0" stylesheets="@../style/style2.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <columns>
+                                          <TableColumn prefWidth="75.0" text="C1" />
+                                          <TableColumn prefWidth="75.0" text="C2" />
+                                          <TableColumn prefWidth="75.0" text="C1" />
+                                          <TableColumn prefWidth="75.0" text="C2" />
+                                       </columns>
+                                    </TableView>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="10.0" top="5.0" />
+                                 </padding>
+                              </AnchorPane>
+                           </content>
+                        </ScrollPane>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </AnchorPane>
+               </children>
+               <StackPane.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="440.0" />
+               </StackPane.margin>
+            </HBox>
+         </children>
+      </StackPane>
+      <AnchorPane fx:id="side_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="230.0" styleClass="pane-slidebar" stylesheets="@../style/style.css" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="5.0">
+         <children>
+            <ImageView fx:id="home_img" accessibleRole="BUTTON" fitHeight="155.0" fitWidth="180.0" pickOnBounds="true" preserveRatio="true" x="25.0">
+               <image>
+                  <Image url="@../images/start.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Reflection bottomOpacity="0.12" fraction="0.64" topOpacity="0.25" />
+               </effect>
+            </ImageView>
+            <Button fx:id="trang_chu_Bt" layoutX="15.0" layoutY="180.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="200.0" stylesheets="@../style/style.css" text="Trang chủ">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Button>
+            <Button fx:id="logoutButton" layoutX="15.0" layoutY="650.0" mnemonicParsing="false" onAction="#logout" prefHeight="60.0" prefWidth="200.0" stylesheets="@../style/style.css" text="Đăng xuất" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="15.0">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Button>
+            <Button fx:id="can_ho_Bt" layoutX="15.0" layoutY="260.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="200.0" stylesheets="@../style/style.css" text="Hộ khẩu">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Button>
+            <Button fx:id="cu_dan_Bt" layoutX="15.0" layoutY="340.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="200.0" stylesheets="@../style/style.css" text="Cư dân">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Button>
+            <Button fx:id="khoan_thu_Bt" layoutX="15.0" layoutY="420.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="200.0" stylesheets="@../style/style.css" text="Khoản thu">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Button>
+            <Button fx:id="thong_ke_Bt" layoutX="15.0" layoutY="500.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="200.0" stylesheets="@../style/style.css" text="Thống kê" visible="false">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <StackPane fx:id="stackPane_home" layoutX="240.0" layoutY="4.0" styleClass="stack-pane" stylesheets="@../style/style.css" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="240.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+         <children>
+            <HBox maxHeight="-Infinity" minHeight="-Infinity" prefHeight="80.0" prefWidth="779.0" StackPane.alignment="TOP_CENTER">
+               <StackPane.margin>
+                  <Insets left="20.0" right="20.0" top="20.0" />
+               </StackPane.margin>
+               <children>
+                  <AnchorPane maxHeight="-Infinity" minHeight="-Infinity" prefHeight="80.0" prefWidth="300.0" styleClass="anchor-pane-content" stylesheets="@../style/style.css" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label fx:id="tongHoKhau" layoutX="79.0" layoutY="32.0" styleClass="label-title" stylesheets="@../style/style.css" visible="true" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="22.0">
+                           <padding>
+                              <Insets right="10.0" />
+                           </padding>
+                        </Label>
+                        <ImageView fitHeight="80.0" fitWidth="105.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/pngtree-biuilding-line-icon-vector-png-image_6627593.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </AnchorPane>
+                  <AnchorPane maxHeight="-Infinity" prefHeight="100.0" prefWidth="300.0" styleClass="anchor-pane-content" stylesheets="@../style/style.css" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label fx:id="tongNhanKhau" layoutX="202.0" layoutY="22.0" styleClass="label-title" stylesheets="@../style/style.css" text="Tổng dân cư" AnchorPane.bottomAnchor="22.4" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="22.0" />
+                        <ImageView fitHeight="60.0" fitWidth="96.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
+                           <image>
+                              <Image url="@../images/human.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </AnchorPane>
+               </children>
+            </HBox>
+            <HBox layoutX="30.0" layoutY="30.0" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="300.0" prefWidth="739.0" StackPane.alignment="TOP_CENTER">
+               <children>
+                  <AnchorPane prefHeight="300.0" prefWidth="300.0" styleClass="anchor-pane-content" stylesheets="@../style/style.css" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <children>
+                        <BarChart fx:id="barChart" alternativeColumnFillVisible="true" horizontalGridLinesVisible="false" horizontalZeroLineVisible="false" layoutX="10.0" layoutY="13.0" prefHeight="272.0" prefWidth="387.0" styleClass="chart-plot-background" stylesheets="@../style/style2.css" verticalGridLinesVisible="false" verticalZeroLineVisible="false" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="35.0">
+                           <xAxis>
+                              <CategoryAxis fx:id="xAxis" label="Quận" side="BOTTOM" stylesheets="@../style/style2.css">
+                                 <styleClass>
+                                    <String fx:value="axis" />
+                                    <String fx:value="axis-label" />
+                                 </styleClass>
+                              </CategoryAxis>
+                           </xAxis>
+                           <yAxis>
+                              <NumberAxis label="Số lượng hộ khẩu" side="LEFT" stylesheets="@../style/style2.css" fx:id="yAxis">
+                                 <styleClass>
+                                    <String fx:value="axis-label" />
+                                    <String fx:value="axis" />
+                                 </styleClass>
+                              </NumberAxis>
+                           </yAxis>
+                        </BarChart>
+                        <Label layoutX="12.0" layoutY="10.0" styleClass="label-title" stylesheets="@../style/style.css" text="Lịch sử thu phí" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="5.0" />
+                     </children>
+                  </AnchorPane>
+               </children>
+               <StackPane.margin>
+                  <Insets left="20.0" right="20.0" top="120.0" />
+               </StackPane.margin>
+            </HBox>
+            <HBox layoutX="30.0" layoutY="130.0" prefHeight="250.0" prefWidth="739.0" StackPane.alignment="BOTTOM_CENTER">
+               <children>
+                  <AnchorPane prefHeight="300.0" prefWidth="300.0" styleClass="anchor-pane-content" stylesheets="@../style/style.css" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label layoutX="79.0" layoutY="32.0" styleClass="label-title" stylesheets="@../style/style.css" text="Nộp tiền" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="5.0">
+                           <padding>
+                              <Insets right="10.0" />
+                           </padding>
+                        </Label>
+                        <Button alignment="CENTER" contentDisplay="CENTER" layoutX="293.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="35.0" prefWidth="75.0" stylesheets="@../style/style.css" text="Thêm" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0" />
+                        <ScrollPane layoutX="68.0" layoutY="37.0" prefHeight="200.0" prefWidth="200.0" stylesheets="@../style/style2.css" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="45.0">
+                           <content>
+                              <AnchorPane prefHeight="382.0" prefWidth="336.0">
+                                 <children>
+                                    <TableView prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <columns>
+                                          <TableColumn prefWidth="75.0" text="C1" />
+                                          <TableColumn prefWidth="75.0" text="C2" />
+                                          <TableColumn prefWidth="75.0" text="C1" />
+                                          <TableColumn prefWidth="75.0" text="C2" />
+                                       </columns>
+                                    </TableView>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="10.0" top="5.0" />
+                                 </padding>
+                              </AnchorPane>
+                           </content>
+                        </ScrollPane>
+                     </children>
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="300.0" prefWidth="300.0" styleClass="anchor-pane-content" stylesheets="@../style/style.css" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label layoutX="79.0" layoutY="32.0" styleClass="label-title" stylesheets="@../style/style.css" text="Biến động dân cư" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="5.0" />
+                        <Button alignment="CENTER" contentDisplay="CENTER" layoutX="145.0" layoutY="28.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="35.0" prefWidth="75.0" stylesheets="@../style/style.css" text="Thêm" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0" />
+                        <ScrollPane prefHeight="200.0" prefWidth="200.0" stylesheets="@../style/style2.css" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="45.0">
+                           <content>
+                              <AnchorPane prefHeight="382.0" prefWidth="336.0">
+                                 <children>
+                                    <TableView prefHeight="200.0" prefWidth="200.0" stylesheets="@../style/style2.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <columns>
+                                          <TableColumn prefWidth="75.0" text="C1" />
+                                          <TableColumn prefWidth="75.0" text="C2" />
+                                          <TableColumn prefWidth="75.0" text="C1" />
+                                          <TableColumn prefWidth="75.0" text="C2" />
+                                       </columns>
+                                    </TableView>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="10.0" top="5.0" />
+                                 </padding>
+                              </AnchorPane>
+                           </content>
+                        </ScrollPane>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </AnchorPane>
+               </children>
+               <StackPane.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="440.0" />
+               </StackPane.margin>
+            </HBox>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>
